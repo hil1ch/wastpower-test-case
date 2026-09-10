@@ -1,15 +1,4 @@
 :root {
-  /* --bg-light: #f8f8f6;
-  --bg-soft: #f1f2ef;
-  --line: #e3e6e1;
-  --line-strong: #ccd2cb;
-  --green: #5b846e;
-  --green-dark: #2d7d53;
-  --green-soft: #eaf4ee;
-  --text: #1d1d1d;
-  --muted: #3d4536;
-  --white: #ffffff; */
-
   --head-color: #3d4536;
   --btn-bg: #5b846e;
   --btn-bg-hover: #2d7d53;
@@ -81,28 +70,28 @@ h6 {
   background-color: #f8f8f6;
 }
 
-.header-top {
+.header__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
 }
 
-.header-logo {
+.header__logo {
   display: inline-flex;
 }
 
-.logo {
+.header__logo-image {
   width: auto;
 }
 
-.search-wrap {
+.header__search-wrap {
   position: relative;
   flex: 1;
   max-width: 700px;
 }
 
-.search {
+.header__search-input {
   width: 100%;
   height: 48px;
   padding: 0 16px 0;
@@ -113,12 +102,12 @@ h6 {
   outline: none;
 }
 
-.search::placeholder {
+.header__search-input::placeholder {
   color: #3d4536;
   line-height: 24px;
 }
 
-.catalog-btn {
+.header__catalog-button {
   position: absolute;
   left: 4px;
   top: 50%;
@@ -140,11 +129,11 @@ h6 {
   height: 40px;
 }
 
-.catalog-btn:hover {
+.header__catalog-button:hover {
   background: var(--btn-bg-hover);
 }
 
-.search-icon {
+.header__search-icon {
   position: absolute;
   right: 16px;
   top: 50%;
@@ -154,19 +143,19 @@ h6 {
   pointer-events: none;
 }
 
-.header-actions {
+.header__actions {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.header-actions-list {
+.header__actions-list {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.header-actions-item {
+.header__action-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,11 +166,11 @@ h6 {
   background: transparent;
 }
 
-.header-actions-item:hover {
+.header__action-item:hover {
   background-color: #eaf4ee;
 }
 
-.delivery-btn {
+.header__delivery-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -196,20 +185,20 @@ h6 {
   font-weight: 600;
 }
 
-.delivery-btn:hover {
+.header__delivery-button:hover {
   background-color: var(--btn-bg-hover);
 }
 
-.delivery-icon {
+.header__delivery-icon {
   width: 16.5px;
   height: 21px;
 }
 
-.favourite-link {
+.header__action-item--favorite {
   position: relative;
 }
 
-.favourite-count {
+.header__favorite-count {
   position: absolute;
   top: 0;
   right: 0;
@@ -226,7 +215,7 @@ h6 {
   line-height: 18px;
 }
 
-.header-menu-list {
+.header__menu-list {
   display: flex;
   align-items: center;
   gap: 28.4px;
@@ -236,7 +225,7 @@ h6 {
   color: var(--text-color);
 }
 
-.header-menu-item:hover {
+.header__menu-item:hover {
   color: #5b846e;
 }
 
@@ -248,7 +237,7 @@ h6 {
   padding: 16px 0;
 }
 
-.breadcrumb {
+.page-header__breadcrumb {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -257,36 +246,36 @@ h6 {
   line-height: 16px;
 }
 
-.breadcrumb__item {
+.page-header__breadcrumb-item {
   color: #3d4536;
 }
 
-.breadcrumb__separator {
+.page-header__breadcrumb-separator {
   width: 4px;
   height: 8px;
   flex-shrink: 0;
 }
 
-.page-title-row {
+.page-header__title-row {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.back-button {
+.page-header__back-button {
   background: none;
   border: none;
   padding: 0;
   margin: 0;
 }
 
-.back-button:hover {
+.page-header__back-button:hover {
   background-color: #eaf4ee;
   border-color: #5b846e;
   border-radius: 50%;
 }
 
-.page-title {
+.page-header__title {
   color: var(--head-color);
   font-size: 40px;
   line-height: 1.1;
@@ -371,7 +360,7 @@ h6 {
   min-width: 36px;
 }
 
-.letters__btn {
+.letters__button {
   border: none;
   background: none;
   white-space: nowrap;
@@ -386,7 +375,7 @@ h6 {
   background-color: var(--btn-bg-hover);
 }
 
-.letters__btn--active {
+.letters__button--active {
   color: white;
 }
 
@@ -411,13 +400,13 @@ h6 {
   letter-spacing: -0.03em;
 }
 
-.brands-columns {
+.all-brands__columns {
   display: grid;
   grid-template-columns: repeat(3, 349px);
   gap: 32px;
 }
 
-.brands-list {
+.all-brands__list {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -427,7 +416,7 @@ h6 {
   line-height: 18px;
 }
 
-.brands-list__link:hover {
+.all-brands__link:hover {
   color: #5b846e;
 }
 
@@ -569,6 +558,9 @@ h6 {
 }
 
 .footer__contact-link {
+  display: inline-block;
+  width: fit-content;
+  align-self: flex-start;
   font-size: 24px;
   line-height: 26px;
   font-weight: 600;

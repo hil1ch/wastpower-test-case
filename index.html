@@ -15,60 +15,64 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-top">
-          <a class="header-logo" href="#" aria-label="На главную">
+        <div class="header__top">
+          <a class="header__logo" href="#" aria-label="На главную">
             <img
-              class="logo"
+              class="header__logo-image"
               src="public/header/Logo_Primary.svg"
               alt="Логотип ВкусДом"
             />
           </a>
 
-          <div class="search-wrap">
-            <button class="catalog-btn">
+          <div class="header__search-wrap">
+            <button class="header__catalog-button">
               <img src="public\header\catalog.svg" alt="Иконка каталога" /><span
                 >Каталог</span
               >
             </button>
             <img
-              class="search-icon"
+              class="header__search-icon"
               src="public\header\search.svg"
               alt="Поиск"
             />
-            <input class="search" type="text" placeholder="Поиск по сайту" />
+            <input
+              class="header__search-input"
+              type="text"
+              placeholder="Поиск по сайту"
+            />
           </div>
 
-          <div class="header-actions" aria-label="Пользовательские действия">
-            <button class="delivery-btn" type="button">
+          <div class="header__actions" aria-label="Пользовательские действия">
+            <button class="header__delivery-button" type="button">
               <img
                 src="public/header/geo.svg"
                 alt=""
                 aria-hidden="true"
-                class="delivery-icon"
+                class="header__delivery-icon"
               />
               <span>Укажите способ получения</span>
             </button>
 
-            <ul class="header-actions-list">
-              <li class="header-actions-item favourite-link">
+            <ul class="header__actions-list">
+              <li class="header__action-item header__action-item--favorite">
                 <a href="#" aria-label="Избранное">
                   <img src="public/header/favourite.svg" alt="Избранное" />
                 </a>
-                <span class="favourite-count">1</span>
+                <span class="header__favorite-count">1</span>
               </li>
-              <li class="header-actions-item">
+              <li class="header__action-item">
                 <a
                   href="#"
-                  class="header-action cart-link"
+                  class="header__action-link header__action-link--cart"
                   aria-label="Корзина"
                 >
                   <img src="public/header/cart.svg" alt="Корзина" />
                 </a>
               </li>
-              <li class="header-actions-item">
+              <li class="header__action-item">
                 <a
                   href="#"
-                  class="header-action user-link"
+                  class="header__action-link header__action-link--user"
                   aria-label="Профиль"
                 >
                   <img src="public/header/user.svg" alt="Профиль" />
@@ -78,23 +82,23 @@
           </div>
         </div>
 
-        <nav class="header-menu" aria-label="Главное меню">
-          <ul class="header-menu-list">
-            <li class="header-menu-item"><a href="#">Акции</a></li>
-            <li class="header-menu-item"><a href="#">Хиты продаж</a></li>
-            <li class="header-menu-item"><a href="#">Новинки</a></li>
-            <li class="header-menu-item">
+        <nav class="header__menu" aria-label="Главное меню">
+          <ul class="header__menu-list">
+            <li class="header__menu-item"><a href="#">Акции</a></li>
+            <li class="header__menu-item"><a href="#">Хиты продаж</a></li>
+            <li class="header__menu-item"><a href="#">Новинки</a></li>
+            <li class="header__menu-item">
               <a href="#">Сделано в Чеченской республике</a>
             </li>
-            <li class="header-menu-item"><a href="#">Готовая еда</a></li>
-            <li class="header-menu-item">
+            <li class="header__menu-item"><a href="#">Готовая еда</a></li>
+            <li class="header__menu-item">
               <a href="#">Собственное производство</a>
             </li>
-            <li class="header-menu-item"><a href="#">Овощи и фрукты</a></li>
-            <li class="header-menu-item"><a href="#">Мясо</a></li>
-            <li class="header-menu-item"><a href="#">Рыба</a></li>
-            <li class="header-menu-item"><a href="#">Сыры</a></li>
-            <li class="header-menu-item"><a href="#">Хлеб</a></li>
+            <li class="header__menu-item"><a href="#">Овощи и фрукты</a></li>
+            <li class="header__menu-item"><a href="#">Мясо</a></li>
+            <li class="header__menu-item"><a href="#">Рыба</a></li>
+            <li class="header__menu-item"><a href="#">Сыры</a></li>
+            <li class="header__menu-item"><a href="#">Хлеб</a></li>
           </ul>
         </nav>
       </div>
@@ -103,26 +107,26 @@
     <main class="main">
       <div class="container">
         <section class="page-header">
-          <div class="breadcrumb">
-            <span class="breadcrumb__item">Главная</span>
-            <img class="breadcrumb__separator" src="public\main\arrow.svg" />
-            <span class="breadcrumb__item breadcrumb__item--current"
+          <div class="page-header__breadcrumb">
+            <span class="page-header__breadcrumb-item">Главная</span>
+            <img class="page-header__breadcrumb-separator" src="public\main\arrow.svg" />
+            <span class="page-header__breadcrumb-item page-header__breadcrumb-item--current"
               >Бренды</span
             >
           </div>
-          <div class="page-title-row">
+          <div class="page-header__title-row">
             <button
-              class="back-button"
+              class="page-header__back-button"
               type="button"
               aria-label="Вернуться назад"
             >
               <img
-                class="back-button__icon"
+                class="page-header__back-button-icon"
                 src="public\main\CaretCircleRight.svg"
                 alt="Кнопка назад"
               />
             </button>
-            <h2 class="page-title">Бренды</h2>
+            <h2 class="page-header__title">Бренды</h2>
           </div>
         </section>
 
@@ -192,174 +196,174 @@
         <section class="letters">
           <ul class="letters__list">
             <li class="letters__item letters__item--numbers">
-              <button class="letters__btn" type="button">0-9</button>
+              <button class="letters__button" type="button">0-9</button>
             </li>
             <li class="letters__item letters__item--active">
-              <button class="letters__btn letters__btn--active" type="button">
+              <button class="letters__button letters__button--active" type="button">
                 А
               </button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Б</button>
+              <button class="letters__button" type="button">Б</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">В</button>
+              <button class="letters__button" type="button">В</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Г</button>
+              <button class="letters__button" type="button">Г</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Д</button>
+              <button class="letters__button" type="button">Д</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Е</button>
+              <button class="letters__button" type="button">Е</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Ж</button>
+              <button class="letters__button" type="button">Ж</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">З</button>
+              <button class="letters__button" type="button">З</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">И</button>
+              <button class="letters__button" type="button">И</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Й</button>
+              <button class="letters__button" type="button">Й</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">К</button>
+              <button class="letters__button" type="button">К</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Л</button>
+              <button class="letters__button" type="button">Л</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">М</button>
+              <button class="letters__button" type="button">М</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Н</button>
+              <button class="letters__button" type="button">Н</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">О</button>
+              <button class="letters__button" type="button">О</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">П</button>
+              <button class="letters__button" type="button">П</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Р</button>
+              <button class="letters__button" type="button">Р</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">С</button>
+              <button class="letters__button" type="button">С</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Т</button>
+              <button class="letters__button" type="button">Т</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">У</button>
+              <button class="letters__button" type="button">У</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Ф</button>
+              <button class="letters__button" type="button">Ф</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Х</button>
+              <button class="letters__button" type="button">Х</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Ц</button>
+              <button class="letters__button" type="button">Ц</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Ч</button>
+              <button class="letters__button" type="button">Ч</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Ш</button>
+              <button class="letters__button" type="button">Ш</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Щ</button>
+              <button class="letters__button" type="button">Щ</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Э</button>
+              <button class="letters__button" type="button">Э</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Ю</button>
+              <button class="letters__button" type="button">Ю</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Я</button>
+              <button class="letters__button" type="button">Я</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">A</button>
+              <button class="letters__button" type="button">A</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">B</button>
+              <button class="letters__button" type="button">B</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">C</button>
+              <button class="letters__button" type="button">C</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">D</button>
+              <button class="letters__button" type="button">D</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">E</button>
+              <button class="letters__button" type="button">E</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">F</button>
+              <button class="letters__button" type="button">F</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">G</button>
+              <button class="letters__button" type="button">G</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">H</button>
+              <button class="letters__button" type="button">H</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">I</button>
+              <button class="letters__button" type="button">I</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">J</button>
+              <button class="letters__button" type="button">J</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">K</button>
+              <button class="letters__button" type="button">K</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">L</button>
+              <button class="letters__button" type="button">L</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">M</button>
+              <button class="letters__button" type="button">M</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">N</button>
+              <button class="letters__button" type="button">N</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">O</button>
+              <button class="letters__button" type="button">O</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">P</button>
+              <button class="letters__button" type="button">P</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Q</button>
+              <button class="letters__button" type="button">Q</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">R</button>
+              <button class="letters__button" type="button">R</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">S</button>
+              <button class="letters__button" type="button">S</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">T</button>
+              <button class="letters__button" type="button">T</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">U</button>
+              <button class="letters__button" type="button">U</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">V</button>
+              <button class="letters__button" type="button">V</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">W</button>
+              <button class="letters__button" type="button">W</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">X</button>
+              <button class="letters__button" type="button">X</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Y</button>
+              <button class="letters__button" type="button">Y</button>
             </li>
             <li class="letters__item">
-              <button class="letters__btn" type="button">Z</button>
+              <button class="letters__button" type="button">Z</button>
             </li>
           </ul>
           <div class="letters__divider"></div>
@@ -367,260 +371,260 @@
 
         <section class="all-brands">
           <span class="all-brands__letter">А</span>
-          <div class="brands-columns">
-            <ul class="brands-list">
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аппетит</a>
+          <div class="all-brands__columns">
+            <ul class="all-brands__list">
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аппетит</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Ароматный Двор</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Ароматный Двор</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Авантаж Кухня</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Авантаж Кухня</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Арт-Ланч</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Арт-Ланч</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аксиома Вкуса</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аксиома Вкуса</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аврора Меню</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аврора Меню</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Алеронт</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Алеронт</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Антарес Готовое</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Антарес Готовое</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Айсберг Салат</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Айсберг Салат</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аллегро Ланч</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аллегро Ланч</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аперитив Бокс</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аперитив Бокс</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Арена Вкуса</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Арена Вкуса</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аспект Готовое</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аспект Готовое</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Алдекс</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Алдекс</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аура Блюд</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аура Блюд</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Анкорс</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Анкорс</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Амстердам Булка</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Амстердам Булка</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аризона Молочка</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аризона Молочка</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Астра Творог</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Астра Творог</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Афина Творожок</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Афина Творожок</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аллегро Сладость</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аллегро Сладость</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Альпийский Родник</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Альпийский Родник</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Амурский Родник</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Амурский Родник</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Апрель Фреш</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Апрель Фреш</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аверон</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аверон</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Альпина Паста</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Альпина Паста</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Арктика Бакалея</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Арктика Бакалея</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Амрил</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Амрил</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аспект Паста</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аспект Паста</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Айс Чипс</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Айс Чипс</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Альпина Чипсы</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Альпина Чипсы</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аполлон Снек</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аполлон Снек</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Арнокс</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Арнокс</a>
               </li>
             </ul>
-            <ul class="brands-list">
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аллегро Сладость</a>
+            <ul class="all-brands__list">
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аллегро Сладость</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Альпийский Родник</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Альпийский Родник</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Амурский Родник</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Амурский Родник</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Апрель Фреш</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Апрель Фреш</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аверон</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аверон</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Альпина Паста</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Альпина Паста</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Арктика Бакалея</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Арктика Бакалея</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Амрил</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Амрил</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аспект Паста</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аспект Паста</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Айс Чипс</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Айс Чипс</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Альпина Чипсы</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Альпина Чипсы</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аполлон Снек</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аполлон Снек</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Арнокс</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Арнокс</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аура Снек</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аура Снек</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Агро-Эко</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Агро-Эко</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Альпина Органик</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Альпина Органик</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Антей Органик</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Антей Органик</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Астра Эко</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Астра Эко</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Атлант Органик</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Атлант Органик</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Афина Органик</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Афина Органик</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аппетит</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аппетит</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Ароматный Двор</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Ароматный Двор</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Авантаж Кухня</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Авантаж Кухня</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Арт-Ланч</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Арт-Ланч</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аксиома Вкуса</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аксиома Вкуса</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аврора Меню</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аврора Меню</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Алеронт</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Алеронт</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Антарес Готовое</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Антарес Готовое</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Айсберг Салат</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Айсберг Салат</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аллегро Ланч</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аллегро Ланч</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аперитив Бокс</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аперитив Бокс</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Арена Вкуса</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Арена Вкуса</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аспект Готовое</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аспект Готовое</a>
               </li>
             </ul>
-            <ul class="brands-list">
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Антей Кот</a>
+            <ul class="all-brands__list">
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Антей Кот</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Арктика Зоо</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Арктика Зоо</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аура Питомец</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аура Питомец</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Арлекс</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Арлекс</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Артрекс</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Артрекс</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Асвекс</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Асвекс</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аслекс</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аслекс</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аладдин</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аладдин</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Альба</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Альба</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Айс Кофе</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Айс Кофе</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Альпина Чай</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Альпина Чай</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Амазонка Кофе</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Амазонка Кофе</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Аснорм</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Аснорм</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Асфикс</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Асфикс</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Атвил</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Атвил</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Асгор</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Асгор</a>
               </li>
-              <li class="brands-list__item">
-                <a class="brands-list__link" href="#">Арфикс</a>
+              <li class="all-brands__item">
+                <a class="all-brands__link" href="#">Арфикс</a>
               </li>
             </ul>
           </div>
