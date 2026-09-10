@@ -234,7 +234,7 @@ h6 {
 }
 
 .header__menu-item:hover {
-  color: #5b846e;
+  color: var(--btn-bg);
 }
 
 /* Main */
@@ -537,10 +537,6 @@ h6 {
   font-weight: 600;
 }
 
-.footer__newsletter-button:hover {
-  background-color: var(--btn-bg-hover);
-}
-
 .footer__newsletter-text {
   font-size: 12px;
   line-height: 16px;
@@ -601,7 +597,8 @@ h6 {
   border-radius: 50%;
 }
 
-.footer__social-item:hover {
+.footer__social-item:hover,
+.footer__newsletter-button:hover {
   background-color: var(--btn-bg-hover);
 }
 
