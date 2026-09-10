@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -16,19 +16,19 @@
     <header class="header">
       <div class="container">
         <div class="header-top">
-          <a class="header-logo-link" href="#">
+          <a class="header-logo" href="#" aria-label="На главную">
             <img
               class="logo"
-              src="public\header\Logo_Primary.svg"
-              alt="Логотип"
+              src="public/header/Logo_Primary.svg"
+              alt="Логотип ВкусДом"
             />
           </a>
+
           <div class="search-wrap">
             <button class="catalog-btn">
-              <img
-                src="public\header\catalog.svg"
-                alt="Иконка каталога"
-              />Каталог
+              <img src="public\header\catalog.svg" alt="Иконка каталога" /><span
+                >Каталог</span
+              >
             </button>
             <img
               class="search-icon"
@@ -37,38 +37,48 @@
             />
             <input class="search" type="text" placeholder="Поиск по сайту" />
           </div>
-          <div class="header-actions">
-            <button class="header-actions-item delivery-btn">
+
+          <div class="header-actions" aria-label="Пользовательские действия">
+            <button class="delivery-btn" type="button">
               <img
-                src="public\header\geo.svg"
-                alt="Иконка местоположения"
-                class="delivery"
+                src="public/header/geo.svg"
+                alt=""
+                aria-hidden="true"
+                class="delivery-icon"
               />
-              Укажите способ получения
+              <span>Укажите способ получения</span>
             </button>
+
             <ul class="header-actions-list">
               <li class="header-actions-item favourite-link">
-                <a
-                  ><img
-                    src="public\header\favourite.svg"
-                    alt="Иконка избранных"
-                /></a>
-                <div class="favourite-count">1</div>
+                <a href="#" aria-label="Избранное">
+                  <img src="public/header/favourite.svg" alt="Избранное" />
+                </a>
+                <span class="favourite-count">1</span>
               </li>
               <li class="header-actions-item">
-                <a class="header-action cart-link">
-                  <img src="public\header\cart.svg" alt="Иконка корзины" />
+                <a
+                  href="#"
+                  class="header-action cart-link"
+                  aria-label="Корзина"
+                >
+                  <img src="public/header/cart.svg" alt="Корзина" />
                 </a>
               </li>
               <li class="header-actions-item">
-                <a class="header-action user-link">
-                  <img src="public\header\user.svg" alt="Иконка пользователя" />
+                <a
+                  href="#"
+                  class="header-action user-link"
+                  aria-label="Профиль"
+                >
+                  <img src="public/header/user.svg" alt="Профиль" />
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="header-menu">
+
+        <nav class="header-menu" aria-label="Главное меню">
           <ul class="header-menu-list">
             <li class="header-menu-item"><a href="#">Акции</a></li>
             <li class="header-menu-item"><a href="#">Хиты продаж</a></li>
@@ -86,10 +96,38 @@
             <li class="header-menu-item"><a href="#">Сыры</a></li>
             <li class="header-menu-item"><a href="#">Хлеб</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
-    <main></main>
+
+    <main class="main">
+      <div class="container">
+        <div class="page-header">
+          <div class="breadcrumb">
+            <span class="breadcrumb__item">Главная</span>
+            <img class="breadcrumb__separator" src="public\main\arrow.svg" />
+            <span class="breadcrumb__item breadcrumb__item--current"
+              >Бренды</span
+            >
+          </div>
+          <div class="page-title-row">
+            <button
+              class="back-button"
+              type="button"
+              aria-label="Вернуться назад"
+            >
+              <img
+                class="back-button__icon"
+                src="public\main\CaretCircleRight.svg"
+                alt="Кнопка назад"
+              />
+            </button>
+            <h2 class="page-title">Бренды</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <footer></footer>
   </body>
 </html>
