@@ -13,6 +13,7 @@
   --head-color: #3d4536;
   --btn-bg: #5b846e;
   --btn-bg-hover: #2d7d53;
+  --text-color: #111111;
 }
 
 * {
@@ -24,6 +25,7 @@ body {
   margin: 0;
   min-height: 100%;
   font-family: "Geologica", sans-serif;
+  color: var(--text-color);
 }
 
 body {
@@ -230,6 +232,7 @@ h6 {
   padding: 27px 0;
   font-size: 14px;
   font-weight: 600;
+  color: var(--text-color);
 }
 
 .header-menu-item:hover {
@@ -391,4 +394,38 @@ h6 {
   height: 1px;
   margin-top: 16px;
   background-color: #e3e6e1;
+}
+
+.all-brands {
+  padding: 32px 0;
+  display: flex;
+  gap: 32px;
+}
+
+.all-brands__letter {
+  width: 200px;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 68px;
+  letter-spacing: -0.03em;
+}
+
+.brands-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 349px);
+  gap: 32px;
+}
+
+.brands-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.brands-list__item:hover {
+  color: #5b846e;
 }
