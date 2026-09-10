@@ -3,6 +3,14 @@
   --btn-bg: #5b846e;
   --btn-bg-hover: #2d7d53;
   --text-color: #111111;
+  --color-white: #ffffff;
+  --color-surface-light: #f8f8f6;
+  --color-surface-muted: #f1f2ef;
+  --color-border-light: #e3e6e1;
+  --color-border-soft: #ccd2cb;
+  --color-hover-soft: #eaf4ee;
+  --color-muted: #878f87;
+  --color-accent-soft: #d5e6d9;
 }
 
 * {
@@ -67,7 +75,7 @@ h6 {
 .header {
   width: 100%;
   padding-top: 32px;
-  background-color: #f8f8f6;
+  background-color: var(--color-surface-light);
 }
 
 .header__top {
@@ -96,9 +104,9 @@ h6 {
   height: 48px;
   padding: 0 16px 0;
   padding-left: calc(4px + 131px + 16px);
-  border: 1px solid #e3e6e1;
+  border: 1px solid var(--color-border-light);
   border-radius: 12px;
-  background-color: #f1f2ef;
+  background-color: var(--color-surface-muted);
   outline: none;
 }
 
@@ -161,13 +169,13 @@ h6 {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border: 1px solid #ccd2cb;
+  border: 1px solid var(--color-border-soft);
   border-radius: 8px;
   background: transparent;
 }
 
 .header__action-item:hover {
-  background-color: #eaf4ee;
+  background-color: var(--color-hover-soft);
 }
 
 .header__delivery-button {
@@ -270,8 +278,8 @@ h6 {
 }
 
 .page-header__back-button:hover {
-  background-color: #eaf4ee;
-  border-color: #5b846e;
+  background-color: var(--color-hover-soft);
+  border-color: var(--btn-bg);
   border-radius: 50%;
 }
 
@@ -316,13 +324,13 @@ h6 {
   justify-content: center;
   width: 100%;
   height: 100%;
-  border: 1px solid #f1f2ef;
+  border: 1px solid var(--color-surface-muted);
   border-radius: 24px;
   overflow: hidden;
 }
 
 .popular-brands__link:hover {
-  border-color: #d5e6d9;
+  border-color: var(--color-accent-soft);
   box-shadow: 0 0 0 2px rgba(91, 132, 110, 0.08);
 }
 
@@ -351,7 +359,7 @@ h6 {
 }
 
 .letters__item:hover {
-  background-color: #eaf4ee;
+  background-color: var(--color-hover-soft);
   border-radius: 4px;
 }
 
@@ -383,7 +391,7 @@ h6 {
   width: 100%;
   height: 1px;
   margin-top: 16px;
-  background-color: #e3e6e1;
+  background-color: var(--color-border-light);
 }
 
 .all-brands {
@@ -428,7 +436,7 @@ h6 {
 .footer__divider {
   width: 100%;
   height: 1px;
-  background-color: #e3e6e1;
+  background-color: var(--color-border-light);
   margin-bottom: 32px;
 }
 
@@ -480,7 +488,7 @@ h6 {
   color: var(--head-color);
 
   padding: 4px;
-  background-color: #f1f2ef;
+  background-color: var(--color-surface-muted);
   border-radius: 8px;
 
   width: 142px;
@@ -507,7 +515,7 @@ h6 {
   flex-direction: column;
   gap: 8px;
 
-  background-color: #f1f2ef;
+  background-color: var(--color-surface-muted);
   border-radius: 16px;
   padding: 16px;
 
@@ -536,7 +544,7 @@ h6 {
 .footer__newsletter-text {
   font-size: 12px;
   line-height: 16px;
-  color: #878f87;
+  color: var(--color-muted);
 }
 
 .footer__contacts-list {
@@ -554,7 +562,7 @@ h6 {
 .footer__contact-label {
   font-size: 12px;
   line-height: 16px;
-  color: #878f87;
+  color: var(--color-muted);
 }
 
 .footer__contact-link {
@@ -568,7 +576,7 @@ h6 {
 
 .footer__contact-text {
   line-height: 24px;
-  color: #3d4536;
+  color: var(--head-color);
 }
 
 .footer__social {
@@ -607,7 +615,7 @@ h6 {
 }
 
 .footer__bottom-text {
-  color: #878f87;
+  color: var(--color-muted);
 }
 
 .footer__bottom-link {
