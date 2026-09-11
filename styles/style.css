@@ -241,6 +241,38 @@ h6 {
   color: var(--btn-bg);
 }
 
+.button__menu {
+  display: none;
+
+  border: none;
+  background: none;
+  background-color: var(--btn-bg);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.mobile__buttons {
+  display: none;
+  /* display: flex;
+  align-items: center;
+  gap: 8px; */
+}
+
+.mobile__buttons-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 167.5px;
+  padding: 8px 0;
+
+  border: none;
+  background-color: var(--btn-bg);
+  color: var(--color-white);
+  border-radius: 8px;
+}
+
 /* Main */
 .page-header {
   display: flex;
@@ -348,6 +380,7 @@ h6 {
 .letters__list {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .letters__item {
@@ -602,7 +635,9 @@ h6 {
 }
 
 .footer__social-item:hover,
-.footer__newsletter-button:hover {
+.footer__newsletter-button:hover,
+.button__menu:hover,
+.mobile__buttons-btn:hover {
   background-color: var(--btn-bg-hover);
 }
 
