@@ -1,6 +1,7 @@
 const popularBrandsSwiper = new Swiper(".popular-brands", {
-  loop: true,
+  loop: false,
   slidesPerView: 6,
+  spaceBetween: 10,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -39,4 +40,26 @@ const popularBrandsSwiper = new Swiper(".popular-brands", {
   //       spaceBetween: 10,
   //     },
   //   },
+});
+
+const headerMenuSwiper = new Swiper(".header__menu", {
+  loop: false,
+  slidesPerView: 11,
+  spaceBetween: 28,
+  navigation: {
+    nextEl: ".header__menu-next",
+    prevEl: ".header__menu-prev",
+  },
+  on: {
+    init() {
+      this.el
+        .querySelectorAll(".swiper-button-next svg, .swiper-button-prev svg")
+        .forEach((svg) => svg.remove());
+    },
+    slideChange() {
+      this.el
+        .querySelectorAll(".swiper-button-next svg, .swiper-button-prev svg")
+        .forEach((svg) => svg.remove());
+    },
+  },
 });

@@ -272,16 +272,52 @@ h6 {
 .header__menu-list {
   display: flex;
   align-items: center;
-  gap: 28.4px;
+  justify-content: center;
+  /* gap: 28.4px; */
   padding: 27px 0;
   font-size: 14px;
   font-weight: 600;
   color: var(--text-color);
+
+  position: relative;
+}
+
+.header__menu-item {
+  width: auto !important;
+  flex: 0 0 auto;
 }
 
 .header__menu-item:hover {
   color: var(--btn-bg);
 }
+
+.header__menu .swiper-button-prev,
+.header__menu .swiper-button-next {
+  /* width: 32px;
+  height: 32px; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  /* transform: translateY(90%); */
+  z-index: 1000;
+}
+
+.header__menu .swiper-button-prev {
+  left: -10px;
+}
+
+.header__menu .swiper-button-next {
+  right: -10px;
+}
+
+/* 
+.header__menu .swiper-button-prev:hover,
+.header__menu .swiper-button-next:hover {
+  background-color: var(--color-hover-soft);
+} */
 
 .button__menu {
   display: none;
@@ -387,7 +423,6 @@ h6 {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 10px;
 
   position: relative;
 }
