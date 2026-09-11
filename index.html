@@ -10,6 +10,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <title>ВкусДом</title>
   </head>
   <body>
@@ -163,10 +167,10 @@
           </div>
         </section>
 
-        <section class="popular-brands">
+        <section class="popular-brands swiper">
           <h3 class="popular-brands__title">Популярные бренды</h3>
-          <ul class="popular-brands__list">
-            <li class="popular-brands__item">
+          <ul class="swiper-wrapper popular-brands__list">
+            <li class="popular-brands__item swiper-slide">
               <a class="popular-brands__link" href="#"
                 ><img
                   class="popular-brands__image"
@@ -174,7 +178,7 @@
                   alt="Мираторг"
               /></a>
             </li>
-            <li class="popular-brands__item">
+            <li class="popular-brands__item swiper-slide">
               <a class="popular-brands__link" href="#"
                 ><img
                   class="popular-brands__image"
@@ -182,7 +186,7 @@
                   alt="Барилла"
               /></a>
             </li>
-            <li class="popular-brands__item">
+            <li class="popular-brands__item swiper-slide">
               <a class="popular-brands__link" href="#"
                 ><img
                   class="popular-brands__image"
@@ -190,7 +194,7 @@
                   alt="Зеленая линия"
               /></a>
             </li>
-            <li class="popular-brands__item">
+            <li class="popular-brands__item swiper-slide">
               <a class="popular-brands__link" href="#"
                 ><img
                   class="popular-brands__image"
@@ -198,7 +202,7 @@
                   alt="Гурмэ"
               /></a>
             </li>
-            <li class="popular-brands__item">
+            <li class="popular-brands__item swiper-slide">
               <a class="popular-brands__link" href="#"
                 ><img
                   class="popular-brands__image"
@@ -207,7 +211,7 @@
                 />
               </a>
             </li>
-            <li class="popular-brands__item">
+            <li class="popular-brands__item swiper-slide">
               <a class="popular-brands__link" href="#"
                 ><img
                   class="popular-brands__image"
@@ -215,7 +219,7 @@
                   alt="Market"
               /></a>
             </li>
-            <li class="popular-brands__item">
+            <li class="popular-brands__item swiper-slide">
               <a class="popular-brands__link" href="#"
                 ><img
                   class="popular-brands__image"
@@ -224,6 +228,12 @@
               /></a>
             </li>
           </ul>
+          <div class="swiper-button-prev">
+            <!-- <img src="public\swiper\CaretCircleLeft.svg" /> -->
+          </div>
+          <div class="swiper-button-next">
+            <!-- <img src="public\swiper\CaretCircleRight.svg" /> -->
+          </div>
         </section>
 
         <section class="letters">
@@ -854,5 +864,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./scripts/swiper.js"></script>
   </body>
 </html>
