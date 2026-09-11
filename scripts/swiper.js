@@ -1,13 +1,21 @@
 const popularBrandsSwiper = new Swiper(".popular-brands", {
   loop: true,
   slidesPerView: 6,
-  spaceBetween: 10,
-  //   watchOverflow: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-
-    addIcons: true,
+  },
+  on: {
+    init() {
+      this.el
+        .querySelectorAll(".swiper-button-next svg, .swiper-button-prev svg")
+        .forEach((svg) => svg.remove());
+    },
+    slideChange() {
+      this.el
+        .querySelectorAll(".swiper-button-next svg, .swiper-button-prev svg")
+        .forEach((svg) => svg.remove());
+    },
   },
   //   breakpoints: {
   //     320: {

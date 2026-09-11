@@ -23,6 +23,7 @@ body {
   min-height: 100%;
   font-family: "Geologica", sans-serif;
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 body {
@@ -70,10 +71,17 @@ h6 {
   margin: 0 auto;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  width: 3.75px;
-  height: 7.5px;
+.popular-brands.swiper,
+.popular-brands .swiper-wrapper {
+  position: relative;
+  overflow: visible;
+}
+
+.popular-brands .swiper-button-prev,
+.popular-brands .swiper-button-next {
+  width: 32px;
+  height: 32px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,7 +89,29 @@ h6 {
   border-radius: 50%;
 
   position: absolute;
+  transform: translateY(90%);
+  z-index: 1000;
 }
+
+.popular-brands .swiper-button-prev {
+  left: -15px;
+  z-index: 1000;
+}
+
+.popular-brands .swiper-button-next {
+  right: -16px;
+  z-index: 1000;
+}
+
+.popular-brands .swiper-button-prev:hover,
+.popular-brands .swiper-button-next:hover {
+  background-color: var(--color-hover-soft);
+}
+
+.swiper-button__image-right {
+  transform: rotate(180deg);
+}
+
 /* Header */
 
 .header {
@@ -387,7 +417,6 @@ h6 {
 .popular-brands__image {
   display: block;
   width: 100%;
-  height: 100%;
   object-fit: contain;
 }
 
