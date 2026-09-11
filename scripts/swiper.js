@@ -63,4 +63,5 @@ const headerMenuSwiper = new Swiper(".header__menu", {
         .forEach((svg) => svg.remove());
     },
   },
+    
 });
