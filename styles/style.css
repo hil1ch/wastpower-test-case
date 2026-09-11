@@ -327,9 +327,6 @@ h6 {
 
 .mobile__buttons {
   display: none;
-  /* display: flex;
-  align-items: center;
-  gap: 8px; */
 }
 
 .mobile__buttons-btn {
@@ -413,6 +410,10 @@ h6 {
   font-weight: 600;
   line-height: 38px;
   color: var(--head-color);
+}
+
+.popular-brands__title-mobile {
+  display: none;
 }
 
 .popular-brands__list {
@@ -813,9 +814,24 @@ h6 {
   }
 }
 
+@media (max-width: 992px) {
+  .popular-brands .swiper-button-prev,
+  .popular-brands .swiper-button-next {
+    display: none;
+  }
+  
+  .popular-brands__item {
+    width: 100%;
+    max-width: 114.67px;
+    height: 80px;
+  }
+}
+
 @media (max-width: 1140px) {
   .header__catalog-button,
-  .header__actions {
+  .header__actions,
+  .page-header__breadcrumb,
+  .popular-brands__title {
     display: none;
   }
 
@@ -830,6 +846,23 @@ h6 {
   .header__menu-item {
     width: auto !important;
     flex: 0 0 auto;
+  }
+
+  .page-header__title {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .popular-brands__title-mobile {
+    display: block;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 600;
+    color: var(--head-color);
+  }
+
+  .popular-brands.swiper {
+    padding: 16px 0;
   }
 }
 
