@@ -741,6 +741,15 @@ h6 {
   color: var(--btn-bg-hover);
 }
 
+@media (max-width: 420px) {
+  .footer__downloads {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     width: min(375px, calc(100% - 32px));
@@ -820,6 +829,44 @@ h6 {
   .all-brands__columns {
     display: block;
   }
+
+  .footer__inner {
+    display: block;
+  }
+
+  .footer__about {
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .footer__nav {
+    display: block;
+    gap: 24px;
+  }
+
+  .footer__list {
+    gap: 24px;
+  }
+
+  .footer__list:first-child {
+    margin-bottom: 24px;
+  }
+
+  .footer__newsletter {
+    width: 343px;
+    padding: 8px;
+  }
+
+  .footer__newsletter-button {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    height: 32px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -832,6 +879,22 @@ h6 {
     width: 100%;
     max-width: 114.67px;
     height: 80px;
+  }
+
+  .footer__inner {
+    display: block;
+  }
+
+  .footer__about {
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 16px;
   }
 }
 
@@ -871,6 +934,19 @@ h6 {
 
   .popular-brands.swiper {
     padding: 16px 0;
+  }
+
+  .footer__inner {
+    gap: 36px;
+  }
+
+  .footer__newsletter {
+    max-width: 550px;
+    width: 100%;
+  }
+
+  .footer__bottom {
+    justify-content: space-between;
   }
 }
 
