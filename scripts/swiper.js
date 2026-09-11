@@ -43,9 +43,10 @@ const popularBrandsSwiper = new Swiper(".popular-brands", {
 });
 
 const headerMenuSwiper = new Swiper(".header__menu", {
-  loop: false,
-  slidesPerView: 11,
+  loop: true,
+  slidesPerView: "auto",
   spaceBetween: 28,
+  centerInsufficientSlides: true,
   navigation: {
     nextEl: ".header__menu-next",
     prevEl: ".header__menu-prev",

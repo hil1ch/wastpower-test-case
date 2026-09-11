@@ -272,8 +272,6 @@ h6 {
 .header__menu-list {
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* gap: 28.4px; */
   padding: 27px 0;
   font-size: 14px;
   font-weight: 600;
@@ -283,8 +281,7 @@ h6 {
 }
 
 .header__menu-item {
-  width: auto !important;
-  flex: 0 0 auto;
+  width: auto;
 }
 
 .header__menu-item:hover {
@@ -293,15 +290,10 @@ h6 {
 
 .header__menu .swiper-button-prev,
 .header__menu .swiper-button-next {
-  /* width: 32px;
-  height: 32px; */
-
   display: flex;
   align-items: center;
   justify-content: center;
 
-  position: absolute;
-  /* transform: translateY(90%); */
   z-index: 1000;
 }
 
@@ -312,12 +304,6 @@ h6 {
 .header__menu .swiper-button-next {
   right: -10px;
 }
-
-/* 
-.header__menu .swiper-button-prev:hover,
-.header__menu .swiper-button-next:hover {
-  background-color: var(--color-hover-soft);
-} */
 
 .button__menu {
   display: none;
